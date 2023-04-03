@@ -158,11 +158,13 @@ def main():
     logger.info('Environment info:\n' + dash_line + env_info + '\n' +
                 dash_line)
     meta['env_info'] = env_info
+    meta['config'] = cfg.pretty_text
 
     # log some basic info
     logger.info(f'Distributed training: {distributed}')
     logger.info(f'Config:\n{cfg.pretty_text}')
-
+    
+    cfg.device = 'cuda'
     # set random seeds. Force setting fixed seed and deterministic=True in SOT
     # configs
     if args.seed is not None:
