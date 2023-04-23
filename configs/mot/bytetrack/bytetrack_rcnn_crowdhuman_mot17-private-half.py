@@ -7,7 +7,7 @@ img_scale = (800, 1440)
 samples_per_gpu = 4
 
 model = dict(
-    type='OCSORT',
+    type='ByteTrack',
     detector=dict(
         rpn_head=dict(bbox_coder=dict(clip_border=False)),
         roi_head=dict(
@@ -19,14 +19,11 @@ model = dict(
         )),
     motion=dict(type='KalmanFilter'),
     tracker=dict(
-        type='OCSORTTracker',
-        obj_score_thr=0.3,
+        type='ByteTracker',
+        obj_score_thrs=dict(high=0.6, low=0.1),
         init_track_thr=0.7,
         weight_iou_with_det_scores=True,
-        match_iou_thr=0.3,
-        num_tentatives=3,
-        vel_consist_weight=0.2,
-        vel_delta_t=3,
+        match_iou_thrs=dict(high=0.1, low=0.5, tentative=0.3),
         num_frames_retain=30))
 
 train_pipeline = [
@@ -128,6 +125,16 @@ resume_from = None
 interval = 5
 
 # learning policy
+# lr_config = dict(
+#     policy='YOLOX',
+#     warmup='exp',
+#     by_epoch=False,
+#     warmup_by_epoch=True,
+#     warmup_ratio=1,
+#     warmup_iters=1,
+#     num_last_epochs=num_last_epochs,
+#     min_lr_ratio=0.05)
+
 lr_config = dict(
     policy='step',
     warmup='linear',
