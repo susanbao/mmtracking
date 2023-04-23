@@ -1,0 +1,4 @@
+nohup: ignoring input
+/home/sas20048/anaconda/envs/mmtracking1/lib/python3.7/site-packages/mmcv/__init__.py:21: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  'On January 1, 2023, MMCV will release v2.0.0, in which it will remove '
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [03:51<11:35, 231.82s/it] 50%|█████     | 2/4 [44:45<51:17, 1538.54s/it] 75%|███████▌  | 3/4 [2:54:29<1:13:10, 4390.71s/it]100%|██████████| 4/4 [3:19:37<00:00, 3252.66s/it]  100%|██████████| 4/4 [3:19:37<00:00, 2994.47s/it]
