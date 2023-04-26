@@ -1,0 +1,1839 @@
+nohup: ignoring input
+/home/sas20048/anaconda/envs/mmtracking1/lib/python3.7/site-packages/mmcv/__init__.py:21: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  'On January 1, 2023, MMCV will release v2.0.0, in which it will remove '
+2023-04-24 18:07:01,365 - mmdet - INFO - image shape: height=800, width=1440 in YOLOX.__init__
+2023-04-24 18:07:01,385 - mmcv - INFO - initialize YOLOX with init_cfg {'type': 'Pretrained', 'checkpoint': 'https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth'}
+2023-04-24 18:07:01,385 - mmcv - INFO - load model from: https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth
+2023-04-24 18:07:01,386 - mmcv - INFO - load checkpoint from http path: https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth
+2023-04-24 18:07:01,623 - mmcv - WARNING - The model and loaded state dict do not match exactly
+
+size mismatch for bbox_head.multi_level_conv_cls.0.weight: copying a param with shape torch.Size([80, 320, 1, 1]) from checkpoint, the shape in current model is torch.Size([1, 320, 1, 1]).
+size mismatch for bbox_head.multi_level_conv_cls.0.bias: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([1]).
+size mismatch for bbox_head.multi_level_conv_cls.1.weight: copying a param with shape torch.Size([80, 320, 1, 1]) from checkpoint, the shape in current model is torch.Size([1, 320, 1, 1]).
+size mismatch for bbox_head.multi_level_conv_cls.1.bias: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([1]).
+size mismatch for bbox_head.multi_level_conv_cls.2.weight: copying a param with shape torch.Size([80, 320, 1, 1]) from checkpoint, the shape in current model is torch.Size([1, 320, 1, 1]).
+size mismatch for bbox_head.multi_level_conv_cls.2.bias: copying a param with shape torch.Size([80]) from checkpoint, the shape in current model is torch.Size([1]).
+2023-04-24 18:07:01,675 - mmcv - INFO - 
+detector.backbone.stem.conv.conv.weight - torch.Size([80, 12, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,675 - mmcv - INFO - 
+detector.backbone.stem.conv.bn.weight - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,675 - mmcv - INFO - 
+detector.backbone.stem.conv.bn.bias - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,675 - mmcv - INFO - 
+detector.backbone.stage1.0.conv.weight - torch.Size([160, 80, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,675 - mmcv - INFO - 
+detector.backbone.stage1.0.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,675 - mmcv - INFO - 
+detector.backbone.stage1.0.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,675 - mmcv - INFO - 
+detector.backbone.stage1.1.main_conv.conv.weight - torch.Size([80, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.main_conv.bn.weight - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.main_conv.bn.bias - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.short_conv.conv.weight - torch.Size([80, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.short_conv.bn.weight - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.short_conv.bn.bias - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.final_conv.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.final_conv.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.final_conv.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.0.conv1.conv.weight - torch.Size([80, 80, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.0.conv1.bn.weight - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.0.conv1.bn.bias - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.0.conv2.conv.weight - torch.Size([80, 80, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.0.conv2.bn.weight - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.0.conv2.bn.bias - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.1.conv1.conv.weight - torch.Size([80, 80, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.1.conv1.bn.weight - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.1.conv1.bn.bias - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.1.conv2.conv.weight - torch.Size([80, 80, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.1.conv2.bn.weight - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.1.conv2.bn.bias - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.2.conv1.conv.weight - torch.Size([80, 80, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.2.conv1.bn.weight - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.2.conv1.bn.bias - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.2.conv2.conv.weight - torch.Size([80, 80, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.2.conv2.bn.weight - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.2.conv2.bn.bias - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.3.conv1.conv.weight - torch.Size([80, 80, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.3.conv1.bn.weight - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.3.conv1.bn.bias - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.3.conv2.conv.weight - torch.Size([80, 80, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.3.conv2.bn.weight - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage1.1.blocks.3.conv2.bn.bias - torch.Size([80]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage2.0.conv.weight - torch.Size([320, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage2.0.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage2.0.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage2.1.main_conv.conv.weight - torch.Size([160, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage2.1.main_conv.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage2.1.main_conv.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage2.1.short_conv.conv.weight - torch.Size([160, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,676 - mmcv - INFO - 
+detector.backbone.stage2.1.short_conv.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.short_conv.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.final_conv.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.final_conv.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.final_conv.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.0.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.0.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.0.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.0.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.0.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.0.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.1.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.1.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.1.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.1.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.1.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.1.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.2.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.2.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.2.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.2.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.2.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.2.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.3.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.3.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.3.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.3.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.3.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.3.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.4.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.4.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.4.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.4.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.4.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.4.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.5.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.5.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.5.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.5.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.5.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.5.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,677 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.6.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.6.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.6.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.6.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.6.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.6.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.7.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.7.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.7.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.7.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.7.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.7.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.8.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.8.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.8.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.8.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.8.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.8.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.9.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.9.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.9.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.9.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.9.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.9.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.10.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.10.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.10.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.10.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.10.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.10.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.11.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.11.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.11.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.11.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.11.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage2.1.blocks.11.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage3.0.conv.weight - torch.Size([640, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage3.0.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage3.0.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,678 - mmcv - INFO - 
+detector.backbone.stage3.1.main_conv.conv.weight - torch.Size([320, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.main_conv.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.main_conv.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.short_conv.conv.weight - torch.Size([320, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.short_conv.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.short_conv.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.final_conv.conv.weight - torch.Size([640, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.final_conv.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.final_conv.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.0.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.0.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.0.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.0.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.0.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.0.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.1.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.1.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.1.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.1.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.1.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.1.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.2.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.2.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.2.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.2.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.2.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.2.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.3.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.3.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.3.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.3.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.3.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.3.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.4.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.4.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.4.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.4.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.4.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.4.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,679 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.5.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.5.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.5.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.5.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.5.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.5.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.6.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.6.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.6.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.6.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.6.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.6.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.7.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.7.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.7.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.7.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.7.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.7.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.8.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.8.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.8.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.8.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.8.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.8.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.9.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.9.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.9.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.9.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.9.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.9.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.10.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.10.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.10.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.10.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.10.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.10.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.11.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.11.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.11.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,680 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.11.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.11.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage3.1.blocks.11.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.0.conv.weight - torch.Size([1280, 640, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.0.bn.weight - torch.Size([1280]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.0.bn.bias - torch.Size([1280]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.1.conv1.conv.weight - torch.Size([640, 1280, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.1.conv1.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.1.conv1.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.1.conv2.conv.weight - torch.Size([1280, 2560, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.1.conv2.bn.weight - torch.Size([1280]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.1.conv2.bn.bias - torch.Size([1280]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.main_conv.conv.weight - torch.Size([640, 1280, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.main_conv.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.main_conv.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.short_conv.conv.weight - torch.Size([640, 1280, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.short_conv.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.short_conv.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.final_conv.conv.weight - torch.Size([1280, 1280, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.final_conv.bn.weight - torch.Size([1280]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.final_conv.bn.bias - torch.Size([1280]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.0.conv1.conv.weight - torch.Size([640, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.0.conv1.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.0.conv1.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.0.conv2.conv.weight - torch.Size([640, 640, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.0.conv2.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.0.conv2.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.1.conv1.conv.weight - torch.Size([640, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.1.conv1.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.1.conv1.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.1.conv2.conv.weight - torch.Size([640, 640, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.1.conv2.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.1.conv2.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.2.conv1.conv.weight - torch.Size([640, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.2.conv1.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.2.conv1.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.2.conv2.conv.weight - torch.Size([640, 640, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.2.conv2.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.2.conv2.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,681 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.3.conv1.conv.weight - torch.Size([640, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.3.conv1.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.3.conv1.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.3.conv2.conv.weight - torch.Size([640, 640, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.3.conv2.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.backbone.stage4.2.blocks.3.conv2.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.reduce_layers.0.conv.weight - torch.Size([640, 1280, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.reduce_layers.0.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.reduce_layers.0.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.reduce_layers.1.conv.weight - torch.Size([320, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.reduce_layers.1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.reduce_layers.1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.main_conv.conv.weight - torch.Size([320, 1280, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.main_conv.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.main_conv.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.short_conv.conv.weight - torch.Size([320, 1280, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.short_conv.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.short_conv.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.final_conv.conv.weight - torch.Size([640, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.final_conv.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.final_conv.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.0.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.0.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.0.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.0.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.0.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.0.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.1.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.1.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.1.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.1.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.1.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.1.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.2.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.2.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.2.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.2.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.2.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.2.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,682 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.3.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.3.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.3.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.3.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.3.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.0.blocks.3.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.main_conv.conv.weight - torch.Size([160, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.main_conv.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.main_conv.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.short_conv.conv.weight - torch.Size([160, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.short_conv.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.short_conv.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.final_conv.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.final_conv.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.final_conv.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.0.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.0.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.0.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.0.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.0.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.0.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.1.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.1.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.1.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.1.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.1.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.1.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.2.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.2.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.2.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.2.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.2.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.2.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.3.conv1.conv.weight - torch.Size([160, 160, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.3.conv1.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.3.conv1.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.3.conv2.conv.weight - torch.Size([160, 160, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.3.conv2.bn.weight - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.top_down_blocks.1.blocks.3.conv2.bn.bias - torch.Size([160]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,683 - mmcv - INFO - 
+detector.neck.downsamples.0.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.downsamples.0.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.downsamples.0.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.downsamples.1.conv.weight - torch.Size([640, 640, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.downsamples.1.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.downsamples.1.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.main_conv.conv.weight - torch.Size([320, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.main_conv.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.main_conv.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.short_conv.conv.weight - torch.Size([320, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.short_conv.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.short_conv.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.final_conv.conv.weight - torch.Size([640, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.final_conv.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.final_conv.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.0.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.0.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.0.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.0.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.0.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.0.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.1.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.1.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.1.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.1.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.1.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.1.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.2.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.2.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.2.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.2.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.2.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.2.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.3.conv1.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.3.conv1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.3.conv1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.3.conv2.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.3.conv2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.0.blocks.3.conv2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,684 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.main_conv.conv.weight - torch.Size([640, 1280, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.main_conv.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.main_conv.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.short_conv.conv.weight - torch.Size([640, 1280, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.short_conv.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.short_conv.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.final_conv.conv.weight - torch.Size([1280, 1280, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.final_conv.bn.weight - torch.Size([1280]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.final_conv.bn.bias - torch.Size([1280]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.0.conv1.conv.weight - torch.Size([640, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.0.conv1.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.0.conv1.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.0.conv2.conv.weight - torch.Size([640, 640, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.0.conv2.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.0.conv2.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.1.conv1.conv.weight - torch.Size([640, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.1.conv1.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.1.conv1.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.1.conv2.conv.weight - torch.Size([640, 640, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.1.conv2.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.1.conv2.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.2.conv1.conv.weight - torch.Size([640, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.2.conv1.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.2.conv1.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.2.conv2.conv.weight - torch.Size([640, 640, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.2.conv2.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.2.conv2.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.3.conv1.conv.weight - torch.Size([640, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.3.conv1.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.3.conv1.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.3.conv2.conv.weight - torch.Size([640, 640, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.3.conv2.bn.weight - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.bottom_up_blocks.1.blocks.3.conv2.bn.bias - torch.Size([640]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.out_convs.0.conv.weight - torch.Size([320, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.out_convs.0.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.out_convs.0.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.out_convs.1.conv.weight - torch.Size([320, 640, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.out_convs.1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.out_convs.1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.out_convs.2.conv.weight - torch.Size([320, 1280, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,685 - mmcv - INFO - 
+detector.neck.out_convs.2.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.neck.out_convs.2.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.0.0.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.0.0.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.0.0.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.0.1.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.0.1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.0.1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.1.0.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.1.0.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.1.0.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.1.1.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.1.1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.1.1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.2.0.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.2.0.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.2.0.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.2.1.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.2.1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_cls_convs.2.1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.0.0.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.0.0.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.0.0.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.0.1.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.0.1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.0.1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.1.0.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.1.0.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.1.0.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.1.1.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.1.1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.1.1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.2.0.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.2.0.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.2.0.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.2.1.conv.weight - torch.Size([320, 320, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.2.1.bn.weight - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_reg_convs.2.1.bn.bias - torch.Size([320]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_cls.0.weight - torch.Size([1, 320, 1, 1]): 
+The value is the same before and after calling `init_weights` of ByteTrack  
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_cls.0.bias - torch.Size([1]): 
+The value is the same before and after calling `init_weights` of ByteTrack  
+ 
+2023-04-24 18:07:01,686 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_cls.1.weight - torch.Size([1, 320, 1, 1]): 
+The value is the same before and after calling `init_weights` of ByteTrack  
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_cls.1.bias - torch.Size([1]): 
+The value is the same before and after calling `init_weights` of ByteTrack  
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_cls.2.weight - torch.Size([1, 320, 1, 1]): 
+The value is the same before and after calling `init_weights` of ByteTrack  
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_cls.2.bias - torch.Size([1]): 
+The value is the same before and after calling `init_weights` of ByteTrack  
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_reg.0.weight - torch.Size([4, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_reg.0.bias - torch.Size([4]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_reg.1.weight - torch.Size([4, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_reg.1.bias - torch.Size([4]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_reg.2.weight - torch.Size([4, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_reg.2.bias - torch.Size([4]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_obj.0.weight - torch.Size([1, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_obj.0.bias - torch.Size([1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_obj.1.weight - torch.Size([1, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_obj.1.bias - torch.Size([1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_obj.2.weight - torch.Size([1, 320, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 
+2023-04-24 18:07:01,687 - mmcv - INFO - 
+detector.bbox_head.multi_level_conv_obj.2.bias - torch.Size([1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/yolox/yolox_x_8x8_300e_coco/yolox_x_8x8_300e_coco_20211126_140254-1ef88d67.pth 
+ 

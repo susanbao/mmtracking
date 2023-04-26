@@ -1,0 +1,833 @@
+nohup: ignoring input
+/home/sas20048/anaconda/envs/mmtracking1/lib/python3.7/site-packages/mmcv/__init__.py:21: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  'On January 1, 2023, MMCV will release v2.0.0, in which it will remove '
+/home/sas20048/code/mmtracking/mmtrack/core/utils/misc.py:27: UserWarning: Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+  f'Setting OMP_NUM_THREADS environment variable for each process '
+/home/sas20048/code/mmtracking/mmtrack/core/utils/misc.py:37: UserWarning: Setting MKL_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+  f'Setting MKL_NUM_THREADS environment variable for each process '
+2023-04-23 22:36:44,687 - mmcv - INFO - initialize FasterRCNN with init_cfg {'type': 'Pretrained', 'checkpoint': 'https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth'}
+2023-04-23 22:36:44,687 - mmcv - INFO - load model from: https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth
+2023-04-23 22:36:44,687 - mmcv - INFO - load checkpoint from http path: https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth
+2023-04-23 22:36:44,787 - mmcv - INFO - initialize QuasiDenseEmbedHead with init_cfg {'type': 'Xavier', 'layer': 'Linear', 'distribution': 'uniform', 'bias': 0, 'override': {'type': 'Normal', 'name': 'fc_embed', 'mean': 0, 'std': 0.01, 'bias': 0}}
+2023-04-23 22:36:44,866 - mmcv - INFO - 
+detector.backbone.conv1.weight - torch.Size([64, 3, 7, 7]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,866 - mmcv - INFO - 
+detector.backbone.bn1.weight - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,866 - mmcv - INFO - 
+detector.backbone.bn1.bias - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,866 - mmcv - INFO - 
+detector.backbone.layer1.0.conv1.weight - torch.Size([64, 64, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,866 - mmcv - INFO - 
+detector.backbone.layer1.0.bn1.weight - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,866 - mmcv - INFO - 
+detector.backbone.layer1.0.bn1.bias - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,866 - mmcv - INFO - 
+detector.backbone.layer1.0.conv2.weight - torch.Size([64, 64, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,866 - mmcv - INFO - 
+detector.backbone.layer1.0.bn2.weight - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,866 - mmcv - INFO - 
+detector.backbone.layer1.0.bn2.bias - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,866 - mmcv - INFO - 
+detector.backbone.layer1.0.conv3.weight - torch.Size([256, 64, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.0.bn3.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.0.bn3.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.0.downsample.0.weight - torch.Size([256, 64, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.0.downsample.1.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.0.downsample.1.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.1.conv1.weight - torch.Size([64, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.1.bn1.weight - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.1.bn1.bias - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.1.conv2.weight - torch.Size([64, 64, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.1.bn2.weight - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.1.bn2.bias - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.1.conv3.weight - torch.Size([256, 64, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.1.bn3.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.1.bn3.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.2.conv1.weight - torch.Size([64, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.2.bn1.weight - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.2.bn1.bias - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.2.conv2.weight - torch.Size([64, 64, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.2.bn2.weight - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.2.bn2.bias - torch.Size([64]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.2.conv3.weight - torch.Size([256, 64, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.2.bn3.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer1.2.bn3.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer2.0.conv1.weight - torch.Size([128, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer2.0.bn1.weight - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer2.0.bn1.bias - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer2.0.conv2.weight - torch.Size([128, 128, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer2.0.bn2.weight - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer2.0.bn2.bias - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer2.0.conv3.weight - torch.Size([512, 128, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer2.0.bn3.weight - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer2.0.bn3.bias - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer2.0.downsample.0.weight - torch.Size([512, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,867 - mmcv - INFO - 
+detector.backbone.layer2.0.downsample.1.weight - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.0.downsample.1.bias - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.1.conv1.weight - torch.Size([128, 512, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.1.bn1.weight - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.1.bn1.bias - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.1.conv2.weight - torch.Size([128, 128, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.1.bn2.weight - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.1.bn2.bias - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.1.conv3.weight - torch.Size([512, 128, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.1.bn3.weight - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.1.bn3.bias - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.2.conv1.weight - torch.Size([128, 512, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.2.bn1.weight - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.2.bn1.bias - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.2.conv2.weight - torch.Size([128, 128, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.2.bn2.weight - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.2.bn2.bias - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.2.conv3.weight - torch.Size([512, 128, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.2.bn3.weight - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.2.bn3.bias - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.3.conv1.weight - torch.Size([128, 512, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.3.bn1.weight - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.3.bn1.bias - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.3.conv2.weight - torch.Size([128, 128, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.3.bn2.weight - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.3.bn2.bias - torch.Size([128]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.3.conv3.weight - torch.Size([512, 128, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.3.bn3.weight - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer2.3.bn3.bias - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer3.0.conv1.weight - torch.Size([256, 512, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer3.0.bn1.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer3.0.bn1.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer3.0.conv2.weight - torch.Size([256, 256, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer3.0.bn2.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,868 - mmcv - INFO - 
+detector.backbone.layer3.0.bn2.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.0.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.0.bn3.weight - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.0.bn3.bias - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.0.downsample.0.weight - torch.Size([1024, 512, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.0.downsample.1.weight - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.0.downsample.1.bias - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.1.conv1.weight - torch.Size([256, 1024, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.1.bn1.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.1.bn1.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.1.conv2.weight - torch.Size([256, 256, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.1.bn2.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.1.bn2.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.1.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.1.bn3.weight - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.1.bn3.bias - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.2.conv1.weight - torch.Size([256, 1024, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.2.bn1.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.2.bn1.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.2.conv2.weight - torch.Size([256, 256, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.2.bn2.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.2.bn2.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.2.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.2.bn3.weight - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.2.bn3.bias - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.3.conv1.weight - torch.Size([256, 1024, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.3.bn1.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.3.bn1.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.3.conv2.weight - torch.Size([256, 256, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.3.bn2.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.3.bn2.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.3.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.3.bn3.weight - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.3.bn3.bias - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.4.conv1.weight - torch.Size([256, 1024, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,869 - mmcv - INFO - 
+detector.backbone.layer3.4.bn1.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.4.bn1.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.4.conv2.weight - torch.Size([256, 256, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.4.bn2.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.4.bn2.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.4.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.4.bn3.weight - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.4.bn3.bias - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.5.conv1.weight - torch.Size([256, 1024, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.5.bn1.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.5.bn1.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.5.conv2.weight - torch.Size([256, 256, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.5.bn2.weight - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.5.bn2.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.5.conv3.weight - torch.Size([1024, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.5.bn3.weight - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer3.5.bn3.bias - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.conv1.weight - torch.Size([512, 1024, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.bn1.weight - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.bn1.bias - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.conv2.weight - torch.Size([512, 512, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.bn2.weight - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.bn2.bias - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.conv3.weight - torch.Size([2048, 512, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.bn3.weight - torch.Size([2048]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.bn3.bias - torch.Size([2048]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.downsample.0.weight - torch.Size([2048, 1024, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.downsample.1.weight - torch.Size([2048]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.0.downsample.1.bias - torch.Size([2048]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.1.conv1.weight - torch.Size([512, 2048, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.1.bn1.weight - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.1.bn1.bias - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.1.conv2.weight - torch.Size([512, 512, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.1.bn2.weight - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,870 - mmcv - INFO - 
+detector.backbone.layer4.1.bn2.bias - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.1.conv3.weight - torch.Size([2048, 512, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.1.bn3.weight - torch.Size([2048]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.1.bn3.bias - torch.Size([2048]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.2.conv1.weight - torch.Size([512, 2048, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.2.bn1.weight - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.2.bn1.bias - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.2.conv2.weight - torch.Size([512, 512, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.2.bn2.weight - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.2.bn2.bias - torch.Size([512]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.2.conv3.weight - torch.Size([2048, 512, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.2.bn3.weight - torch.Size([2048]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.backbone.layer4.2.bn3.bias - torch.Size([2048]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.lateral_convs.0.conv.weight - torch.Size([256, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.lateral_convs.0.conv.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.lateral_convs.1.conv.weight - torch.Size([256, 512, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.lateral_convs.1.conv.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.lateral_convs.2.conv.weight - torch.Size([256, 1024, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.lateral_convs.2.conv.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.lateral_convs.3.conv.weight - torch.Size([256, 2048, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.lateral_convs.3.conv.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.fpn_convs.0.conv.weight - torch.Size([256, 256, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.fpn_convs.0.conv.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.fpn_convs.1.conv.weight - torch.Size([256, 256, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.fpn_convs.1.conv.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.fpn_convs.2.conv.weight - torch.Size([256, 256, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.fpn_convs.2.conv.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.fpn_convs.3.conv.weight - torch.Size([256, 256, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.neck.fpn_convs.3.conv.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.rpn_head.rpn_conv.weight - torch.Size([256, 256, 3, 3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.rpn_head.rpn_conv.bias - torch.Size([256]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.rpn_head.rpn_cls.weight - torch.Size([3, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.rpn_head.rpn_cls.bias - torch.Size([3]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,871 - mmcv - INFO - 
+detector.rpn_head.rpn_reg.weight - torch.Size([12, 256, 1, 1]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+detector.rpn_head.rpn_reg.bias - torch.Size([12]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+detector.roi_head.bbox_head.fc_cls.weight - torch.Size([2, 1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+detector.roi_head.bbox_head.fc_cls.bias - torch.Size([2]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+detector.roi_head.bbox_head.fc_reg.weight - torch.Size([4, 1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+detector.roi_head.bbox_head.fc_reg.bias - torch.Size([4]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+detector.roi_head.bbox_head.shared_fcs.0.weight - torch.Size([1024, 12544]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+detector.roi_head.bbox_head.shared_fcs.0.bias - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+detector.roi_head.bbox_head.shared_fcs.1.weight - torch.Size([1024, 1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+detector.roi_head.bbox_head.shared_fcs.1.bias - torch.Size([1024]): 
+PretrainedInit: load from https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco-person/faster_rcnn_r50_fpn_1x_coco-person_20201216_175929-d022e227.pth 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.0.conv.weight - torch.Size([256, 256, 3, 3]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.0.gn.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.0.gn.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.1.conv.weight - torch.Size([256, 256, 3, 3]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.1.gn.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.1.gn.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.2.conv.weight - torch.Size([256, 256, 3, 3]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.2.gn.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.2.gn.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.3.conv.weight - torch.Size([256, 256, 3, 3]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.3.gn.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.convs.3.gn.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of QDTrack  
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.fcs.0.weight - torch.Size([1024, 12544]): 
+XavierInit: gain=1, distribution=uniform, bias=0 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.fcs.0.bias - torch.Size([1024]): 
+XavierInit: gain=1, distribution=uniform, bias=0 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.fc_embed.weight - torch.Size([256, 1024]): 
+NormalInit: mean=0, std=0.01, bias=0 
+ 
+2023-04-23 22:36:44,872 - mmcv - INFO - 
+track_head.embed_head.fc_embed.bias - torch.Size([256]): 
+XavierInit: gain=1, distribution=uniform, bias=0 
+ 
+Downloading: "https://download.openmmlab.com/mmtracking/mot/qdtrack/mot_dataset/qdtrack_faster-rcnn_r50_fpn_4e_crowdhuman_mot17_20220315_163453-68899b0a.pth" to /home/sas20048/.cache/torch/checkpoints/qdtrack_faster-rcnn_r50_fpn_4e_crowdhuman_mot17_20220315_163453-68899b0a.pth
+  0%|          | 0.00/217M [00:00<?, ?B/s]  0%|          | 16.0k/217M [00:00<1:21:25, 46.6kB/s]  0%|          | 48.0k/217M [00:00<41:38, 91.1kB/s]    0%|          | 96.0k/217M [00:00<30:23, 125kB/s]   0%|          | 152k/217M [00:01<24:51, 152kB/s]   0%|          | 208k/217M [00:01<22:18, 170kB/s]  0%|          | 272k/217M [00:01<18:44, 202kB/s]  0%|          | 336k/217M [00:01<17:00, 223kB/s]  0%|          | 408k/217M [00:02<15:39, 242kB/s]  0%|          | 480k/217M [00:02<15:21, 246kB/s]  0%|          | 560k/217M [00:02<14:54, 254kB/s]  0%|          | 640k/217M [00:03<14:46, 256kB/s]  0%|          | 720k/217M [00:03<15:19, 247kB/s]  0%|          | 808k/217M [00:03<14:22, 263kB/s]  0%|          | 904k/217M [00:04<13:12, 286kB/s]  0%|          | 0.98M/217M [00:04<12:45, 296kB/s]  0%|          | 1.07M/217M [00:04<09:56, 380kB/s]  1%|          | 1.12M/217M [00:04<10:41, 353kB/s]  1%|          | 1.18M/217M [00:04<12:35, 300kB/s]  1%|          | 1.29M/217M [00:05<11:34, 326kB/s]  1%|          | 1.41M/217M [00:05<10:51, 347kB/s]  1%|          | 1.53M/217M [00:05<09:55, 380kB/s]  1%|          | 1.66M/217M [00:06<09:03, 415kB/s]  1%|          | 1.80M/217M [00:06<08:23, 448kB/s]  1%|          | 1.95M/217M [00:06<06:32, 574kB/s]  1%|          | 2.02M/217M [00:06<07:16, 517kB/s]  1%|          | 2.12M/217M [00:06<07:08, 526kB/s]  1%|          | 2.30M/217M [00:07<06:24, 586kB/s]  1%|          | 2.51M/217M [00:07<05:57, 629kB/s]  1%|▏         | 2.73M/217M [00:07<04:51, 770kB/s]  1%|▏         | 2.81M/217M [00:07<05:27, 686kB/s]  1%|▏         | 2.99M/217M [00:08<05:32, 674kB/s]  2%|▏         | 3.27M/217M [00:08<03:53, 961kB/s]  2%|▏         | 3.38M/217M [00:08<04:37, 808kB/s]  2%|▏         | 3.58M/217M [00:08<04:30, 827kB/s]  2%|▏         | 3.91M/217M [00:08<03:07, 1.19MB/s]  2%|▏         | 4.05M/217M [00:09<03:52, 960kB/s]   2%|▏         | 4.30M/217M [00:09<03:44, 995kB/s]  2%|▏         | 4.69M/217M [00:09<02:30, 1.47MB/s]  2%|▏         | 4.88M/217M [00:09<03:02, 1.22MB/s]  2%|▏         | 5.16M/217M [00:09<02:30, 1.48MB/s]  2%|▏         | 5.34M/217M [00:10<02:41, 1.38MB/s]  3%|▎         | 5.66M/217M [00:10<02:19, 1.58MB/s]  3%|▎         | 5.84M/217M [00:10<02:22, 1.55MB/s]  3%|▎         | 6.19M/217M [00:10<01:54, 1.94MB/s]  3%|▎         | 6.40M/217M [00:10<02:39, 1.38MB/s]  3%|▎         | 6.77M/217M [00:10<02:15, 1.63MB/s]  3%|▎         | 7.39M/217M [00:11<01:28, 2.47MB/s]  4%|▎         | 7.69M/217M [00:11<01:40, 2.17MB/s]  4%|▎         | 8.07M/217M [00:11<01:28, 2.46MB/s]  4%|▍         | 8.34M/217M [00:11<01:46, 2.05MB/s]  4%|▍         | 8.80M/217M [00:11<01:28, 2.48MB/s]  4%|▍         | 9.07M/217M [00:11<01:49, 1.99MB/s]  4%|▍         | 9.60M/217M [00:12<01:22, 2.64MB/s]  5%|▍         | 9.91M/217M [00:12<01:30, 2.39MB/s]  5%|▍         | 10.5M/217M [00:12<01:13, 2.93MB/s]  5%|▍         | 10.8M/217M [00:12<01:13, 2.93MB/s]  5%|▌         | 11.4M/217M [00:12<01:04, 3.37MB/s]  5%|▌         | 11.8M/217M [00:12<01:01, 3.47MB/s]  6%|▌         | 12.2M/217M [00:12<01:02, 3.46MB/s]  6%|▌         | 12.6M/217M [00:12<01:02, 3.41MB/s]  6%|▌         | 13.4M/217M [00:13<00:52, 4.08MB/s]  6%|▋         | 13.8M/217M [00:13<00:55, 3.85MB/s]  7%|▋         | 14.3M/217M [00:13<00:57, 3.72MB/s]  7%|▋         | 14.6M/217M [00:13<01:02, 3.38MB/s]  7%|▋         | 15.5M/217M [00:13<00:49, 4.29MB/s]  7%|▋         | 15.9M/217M [00:13<00:53, 3.94MB/s]  8%|▊         | 16.7M/217M [00:14<00:48, 4.36MB/s]  8%|▊         | 17.1M/217M [00:14<00:54, 3.85MB/s]  8%|▊         | 17.8M/217M [00:14<00:49, 4.19MB/s]  8%|▊         | 18.4M/217M [00:14<00:45, 4.53MB/s]  9%|▊         | 18.9M/217M [00:14<00:46, 4.42MB/s]  9%|▉         | 19.8M/217M [00:14<00:40, 5.05MB/s]  9%|▉         | 20.3M/217M [00:14<00:43, 4.74MB/s] 10%|▉         | 21.3M/217M [00:14<00:38, 5.39MB/s] 10%|█         | 21.9M/217M [00:15<00:37, 5.51MB/s] 10%|█         | 22.6M/217M [00:15<00:35, 5.77MB/s] 11%|█         | 23.3M/217M [00:15<00:34, 5.89MB/s] 11%|█         | 24.0M/217M [00:15<00:33, 5.99MB/s] 11%|█▏        | 24.7M/217M [00:15<00:33, 6.02MB/s] 12%|█▏        | 25.4M/217M [00:15<00:32, 6.16MB/s] 12%|█▏        | 26.1M/217M [00:15<00:32, 6.20MB/s] 12%|█▏        | 26.7M/217M [00:15<00:32, 6.24MB/s] 13%|█▎        | 27.4M/217M [00:16<00:31, 6.26MB/s] 13%|█▎        | 28.2M/217M [00:16<00:30, 6.46MB/s] 13%|█▎        | 28.9M/217M [00:16<00:30, 6.44MB/s] 14%|█▎        | 29.6M/217M [00:16<00:30, 6.52MB/s] 14%|█▍        | 30.3M/217M [00:16<00:30, 6.38MB/s] 14%|█▍        | 31.2M/217M [00:16<00:31, 6.19MB/s] 15%|█▍        | 32.1M/217M [00:16<00:30, 6.34MB/s] 15%|█▌        | 33.1M/217M [00:16<00:26, 7.16MB/s] 16%|█▌        | 33.8M/217M [00:17<00:28, 6.68MB/s] 16%|█▌        | 34.5M/217M [00:17<00:31, 6.05MB/s] 16%|█▋        | 35.3M/217M [00:17<00:31, 6.05MB/s] 17%|█▋        | 36.2M/217M [00:17<00:31, 6.11MB/s] 17%|█▋        | 37.1M/217M [00:17<00:31, 6.01MB/s] 17%|█▋        | 37.8M/217M [00:17<00:33, 5.66MB/s] 18%|█▊        | 38.7M/217M [00:17<00:32, 5.82MB/s] 18%|█▊        | 39.7M/217M [00:18<00:32, 5.67MB/s] 19%|█▊        | 40.5M/217M [00:18<00:31, 5.79MB/s] 19%|█▉        | 41.5M/217M [00:18<00:30, 6.08MB/s] 19%|█▉        | 42.3M/217M [00:18<00:31, 5.84MB/s] 20%|█▉        | 43.1M/217M [00:18<00:31, 5.80MB/s] 20%|██        | 44.0M/217M [00:18<00:30, 5.97MB/s] 21%|██        | 45.0M/217M [00:19<00:29, 6.16MB/s] 21%|██▏       | 46.3M/217M [00:19<00:26, 6.87MB/s] 22%|██▏       | 47.0M/217M [00:19<00:28, 6.36MB/s] 22%|██▏       | 47.9M/217M [00:19<00:28, 6.25MB/s] 23%|██▎       | 48.8M/217M [00:19<00:27, 6.43MB/s] 23%|██▎       | 49.8M/217M [00:19<00:27, 6.49MB/s] 23%|██▎       | 50.7M/217M [00:19<00:27, 6.39MB/s] 24%|██▍       | 51.6M/217M [00:20<00:26, 6.45MB/s] 24%|██▍       | 52.6M/217M [00:20<00:26, 6.42MB/s] 25%|██▍       | 53.5M/217M [00:20<00:26, 6.43MB/s] 25%|██▌       | 54.5M/217M [00:20<00:26, 6.46MB/s] 26%|██▌       | 55.4M/217M [00:20<00:26, 6.48MB/s] 26%|██▌       | 56.4M/217M [00:20<00:25, 6.56MB/s] 26%|██▋       | 57.2M/217M [00:20<00:26, 6.42MB/s] 27%|██▋       | 58.2M/217M [00:21<00:25, 6.52MB/s] 27%|██▋       | 59.0M/217M [00:21<00:26, 6.30MB/s] 28%|██▊       | 59.8M/217M [00:21<00:27, 6.09MB/s] 28%|██▊       | 60.8M/217M [00:21<00:26, 6.28MB/s] 28%|██▊       | 61.6M/217M [00:21<00:26, 6.13MB/s] 29%|██▉       | 62.5M/217M [00:21<00:26, 6.09MB/s] 29%|██▉       | 63.4M/217M [00:22<00:26, 6.00MB/s] 30%|██▉       | 64.2M/217M [00:22<00:27, 5.88MB/s] 30%|███       | 65.2M/217M [00:22<00:26, 6.01MB/s] 30%|███       | 66.1M/217M [00:22<00:25, 6.17MB/s] 31%|███       | 67.1M/217M [00:22<00:24, 6.33MB/s] 31%|███▏      | 67.9M/217M [00:22<00:25, 6.17MB/s] 32%|███▏      | 68.9M/217M [00:22<00:24, 6.34MB/s] 32%|███▏      | 69.8M/217M [00:23<00:24, 6.33MB/s] 33%|███▎      | 70.8M/217M [00:23<00:24, 6.37MB/s] 33%|███▎      | 71.7M/217M [00:23<00:23, 6.42MB/s] 33%|███▎      | 72.7M/217M [00:23<00:23, 6.45MB/s] 34%|███▍      | 73.6M/217M [00:23<00:23, 6.38MB/s] 34%|███▍      | 74.5M/217M [00:23<00:23, 6.32MB/s] 35%|███▍      | 75.4M/217M [00:24<00:23, 6.32MB/s] 35%|███▌      | 76.2M/217M [00:24<00:23, 6.26MB/s] 36%|███▌      | 77.1M/217M [00:24<00:23, 6.17MB/s] 36%|███▌      | 78.0M/217M [00:24<00:24, 6.07MB/s] 36%|███▋      | 78.9M/217M [00:24<00:23, 6.28MB/s] 37%|███▋      | 79.6M/217M [00:24<00:28, 5.12MB/s] 37%|███▋      | 80.7M/217M [00:25<00:25, 5.68MB/s] 38%|███▊      | 81.6M/217M [00:25<00:24, 5.78MB/s] 38%|███▊      | 82.6M/217M [00:25<00:23, 6.08MB/s] 39%|███▊      | 83.6M/217M [00:25<00:21, 6.40MB/s] 39%|███▉      | 84.6M/217M [00:25<00:21, 6.49MB/s] 39%|███▉      | 85.3M/217M [00:25<00:22, 6.11MB/s] 40%|███▉      | 86.2M/217M [00:25<00:22, 6.18MB/s] 40%|████      | 87.1M/217M [00:26<00:22, 6.18MB/s] 41%|████      | 88.1M/217M [00:26<00:21, 6.29MB/s] 41%|████      | 88.9M/217M [00:26<00:21, 6.14MB/s] 41%|████▏     | 89.7M/217M [00:26<00:22, 5.97MB/s] 42%|████▏     | 90.6M/217M [00:26<00:21, 6.12MB/s] 42%|████▏     | 91.5M/217M [00:26<00:21, 6.15MB/s] 43%|████▎     | 92.3M/217M [00:26<00:22, 5.91MB/s] 43%|████▎     | 93.2M/217M [00:27<00:21, 5.93MB/s] 43%|████▎     | 94.0M/217M [00:27<00:22, 5.86MB/s] 44%|████▎     | 94.9M/217M [00:27<00:21, 6.07MB/s] 44%|████▍     | 95.8M/217M [00:27<00:20, 6.14MB/s] 45%|████▍     | 96.8M/217M [00:27<00:20, 6.30MB/s] 45%|████▍     | 97.6M/217M [00:27<00:20, 6.14MB/s] 45%|████▌     | 98.5M/217M [00:28<00:19, 6.22MB/s] 46%|████▌     | 99.6M/217M [00:28<00:18, 6.50MB/s] 46%|████▋     | 101M/217M [00:28<00:18, 6.67MB/s]  47%|████▋     | 101M/217M [00:28<00:18, 6.42MB/s] 47%|████▋     | 102M/217M [00:28<00:18, 6.47MB/s] 48%|████▊     | 103M/217M [00:28<00:18, 6.55MB/s] 48%|████▊     | 104M/217M [00:28<00:18, 6.24MB/s] 48%|████▊     | 105M/217M [00:29<00:18, 6.49MB/s] 49%|████▉     | 106M/217M [00:29<00:17, 6.59MB/s] 49%|████▉     | 107M/217M [00:29<00:17, 6.45MB/s] 50%|████▉     | 108M/217M [00:29<00:17, 6.43MB/s] 50%|█████     | 109M/217M [00:29<00:17, 6.42MB/s] 51%|█████     | 110M/217M [00:29<00:17, 6.27MB/s] 51%|█████     | 111M/217M [00:30<00:18, 6.19MB/s] 51%|█████▏    | 112M/217M [00:30<00:17, 6.29MB/s] 52%|█████▏    | 113M/217M [00:30<00:16, 6.51MB/s] 52%|█████▏    | 114M/217M [00:30<00:16, 6.57MB/s] 53%|█████▎    | 114M/217M [00:30<00:16, 6.54MB/s] 53%|█████▎    | 115M/217M [00:30<00:16, 6.38MB/s] 54%|█████▎    | 116M/217M [00:30<00:16, 6.55MB/s] 54%|█████▍    | 117M/217M [00:31<00:16, 6.48MB/s] 54%|█████▍    | 118M/217M [00:31<00:15, 6.53MB/s] 55%|█████▍    | 119M/217M [00:31<00:15, 6.43MB/s] 55%|█████▌    | 120M/217M [00:31<00:16, 6.33MB/s] 56%|█████▌    | 121M/217M [00:31<00:15, 6.31MB/s] 56%|█████▌    | 122M/217M [00:31<00:15, 6.33MB/s] 57%|█████▋    | 123M/217M [00:32<00:15, 6.34MB/s] 57%|█████▋    | 124M/217M [00:32<00:15, 6.47MB/s] 57%|█████▋    | 125M/217M [00:32<00:15, 6.37MB/s] 58%|█████▊    | 126M/217M [00:32<00:15, 6.29MB/s] 58%|█████▊    | 126M/217M [00:32<00:15, 6.11MB/s] 59%|█████▊    | 127M/217M [00:32<00:15, 6.15MB/s] 59%|█████▉    | 128M/217M [00:32<00:15, 6.17MB/s] 60%|█████▉    | 129M/217M [00:33<00:14, 6.26MB/s] 60%|█████▉    | 130M/217M [00:33<00:14, 6.36MB/s] 60%|██████    | 131M/217M [00:33<00:14, 6.36MB/s] 61%|██████    | 132M/217M [00:33<00:14, 6.32MB/s] 61%|██████    | 133M/217M [00:33<00:14, 6.14MB/s] 62%|██████▏   | 134M/217M [00:33<00:13, 6.46MB/s] 62%|██████▏   | 135M/217M [00:34<00:13, 6.52MB/s] 63%|██████▎   | 136M/217M [00:34<00:12, 6.69MB/s] 63%|██████▎   | 137M/217M [00:34<00:12, 6.61MB/s] 64%|██████▎   | 138M/217M [00:34<00:12, 6.60MB/s] 64%|██████▍   | 139M/217M [00:34<00:12, 6.47MB/s] 64%|██████▍   | 140M/217M [00:34<00:12, 6.48MB/s] 65%|██████▍   | 141M/217M [00:34<00:12, 6.49MB/s] 65%|██████▌   | 142M/217M [00:35<00:12, 6.46MB/s] 66%|██████▌   | 143M/217M [00:35<00:12, 6.48MB/s] 66%|██████▌   | 143M/217M [00:35<00:12, 6.34MB/s] 66%|██████▋   | 144M/217M [00:35<00:11, 6.40MB/s] 67%|██████▋   | 145M/217M [00:35<00:12, 6.17MB/s] 67%|██████▋   | 146M/217M [00:35<00:12, 6.10MB/s] 68%|██████▊   | 147M/217M [00:35<00:11, 6.36MB/s] 68%|██████▊   | 148M/217M [00:36<00:11, 6.45MB/s] 69%|██████▊   | 149M/217M [00:36<00:10, 6.58MB/s] 69%|██████▉   | 150M/217M [00:36<00:10, 6.47MB/s] 69%|██████▉   | 151M/217M [00:36<00:11, 6.16MB/s] 70%|██████▉   | 152M/217M [00:36<00:11, 6.21MB/s] 70%|███████   | 153M/217M [00:36<00:10, 6.46MB/s] 71%|███████   | 154M/217M [00:37<00:10, 6.46MB/s] 71%|███████   | 154M/217M [00:37<00:10, 6.36MB/s] 72%|███████▏  | 155M/217M [00:37<00:10, 6.38MB/s] 72%|███████▏  | 156M/217M [00:37<00:10, 6.31MB/s] 72%|███████▏  | 157M/217M [00:37<00:09, 6.37MB/s] 73%|███████▎  | 158M/217M [00:37<00:09, 6.44MB/s] 73%|███████▎  | 159M/217M [00:37<00:09, 6.52MB/s] 74%|███████▎  | 160M/217M [00:38<00:09, 6.39MB/s] 74%|███████▍  | 161M/217M [00:38<00:09, 6.40MB/s] 75%|███████▍  | 162M/217M [00:38<00:08, 6.50MB/s] 75%|███████▌  | 163M/217M [00:38<00:08, 6.50MB/s] 75%|███████▌  | 164M/217M [00:38<00:08, 6.64MB/s] 76%|███████▌  | 165M/217M [00:38<00:08, 6.68MB/s] 76%|███████▋  | 166M/217M [00:39<00:08, 6.61MB/s] 77%|███████▋  | 167M/217M [00:39<00:07, 6.65MB/s] 77%|███████▋  | 168M/217M [00:39<00:07, 6.60MB/s] 78%|███████▊  | 169M/217M [00:39<00:07, 6.64MB/s] 78%|███████▊  | 170M/217M [00:39<00:07, 6.54MB/s] 79%|███████▊  | 170M/217M [00:39<00:07, 6.40MB/s] 79%|███████▉  | 171M/217M [00:39<00:07, 6.14MB/s] 79%|███████▉  | 172M/217M [00:40<00:07, 6.30MB/s] 80%|███████▉  | 173M/217M [00:40<00:07, 6.38MB/s] 80%|████████  | 174M/217M [00:40<00:07, 6.31MB/s] 81%|████████  | 175M/217M [00:40<00:06, 6.34MB/s] 81%|████████  | 176M/217M [00:40<00:07, 6.09MB/s] 81%|████████▏ | 177M/217M [00:40<00:07, 5.97MB/s] 82%|████████▏ | 178M/217M [00:40<00:06, 6.27MB/s] 82%|████████▏ | 178M/217M [00:41<00:06, 6.05MB/s] 83%|████████▎ | 179M/217M [00:41<00:06, 6.29MB/s] 83%|████████▎ | 180M/217M [00:41<00:06, 6.42MB/s] 84%|████████▎ | 181M/217M [00:41<00:05, 6.45MB/s] 84%|████████▍ | 182M/217M [00:41<00:05, 6.47MB/s] 84%|████████▍ | 183M/217M [00:41<00:05, 6.54MB/s] 85%|████████▍ | 184M/217M [00:42<00:05, 6.56MB/s] 85%|████████▌ | 185M/217M [00:42<00:05, 6.50MB/s] 86%|████████▌ | 186M/217M [00:42<00:04, 6.85MB/s] 86%|████████▋ | 187M/217M [00:42<00:04, 7.05MB/s] 87%|████████▋ | 188M/217M [00:42<00:04, 6.85MB/s] 87%|████████▋ | 189M/217M [00:42<00:04, 6.75MB/s] 88%|████████▊ | 190M/217M [00:42<00:04, 6.75MB/s] 88%|████████▊ | 191M/217M [00:43<00:04, 6.62MB/s] 89%|████████▊ | 192M/217M [00:43<00:03, 6.77MB/s] 89%|████████▉ | 193M/217M [00:43<00:03, 6.71MB/s] 89%|████████▉ | 194M/217M [00:43<00:03, 6.54MB/s] 90%|████████▉ | 195M/217M [00:43<00:03, 6.54MB/s] 90%|█████████ | 196M/217M [00:43<00:03, 6.36MB/s] 91%|█████████ | 197M/217M [00:44<00:03, 6.14MB/s] 91%|█████████ | 197M/217M [00:44<00:03, 6.17MB/s] 91%|█████████▏| 198M/217M [00:44<00:03, 6.30MB/s] 92%|█████████▏| 199M/217M [00:44<00:02, 6.58MB/s] 92%|█████████▏| 200M/217M [00:44<00:02, 6.60MB/s] 93%|█████████▎| 201M/217M [00:44<00:03, 5.07MB/s] 93%|█████████▎| 202M/217M [00:45<00:02, 5.38MB/s] 94%|█████████▎| 203M/217M [00:45<00:02, 5.56MB/s] 94%|█████████▍| 204M/217M [00:45<00:02, 5.63MB/s] 94%|█████████▍| 205M/217M [00:45<00:02, 5.82MB/s] 95%|█████████▍| 206M/217M [00:45<00:02, 5.60MB/s] 95%|█████████▌| 206M/217M [00:45<00:01, 5.66MB/s] 96%|█████████▌| 207M/217M [00:45<00:01, 5.84MB/s] 96%|█████████▌| 208M/217M [00:46<00:01, 6.10MB/s] 96%|█████████▋| 209M/217M [00:46<00:01, 5.98MB/s] 97%|█████████▋| 210M/217M [00:46<00:01, 6.17MB/s] 97%|█████████▋| 211M/217M [00:46<00:01, 6.12MB/s] 98%|█████████▊| 212M/217M [00:46<00:00, 5.89MB/s] 98%|█████████▊| 213M/217M [00:46<00:00, 6.18MB/s] 98%|█████████▊| 213M/217M [00:47<00:00, 5.97MB/s] 99%|█████████▉| 214M/217M [00:47<00:00, 5.50MB/s] 99%|█████████▉| 215M/217M [00:47<00:00, 5.94MB/s]100%|█████████▉| 216M/217M [00:47<00:00, 6.11MB/s]100%|██████████| 217M/217M [00:47<00:00, 4.78MB/s]

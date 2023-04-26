@@ -68,8 +68,8 @@ data = dict(
         img_prefix='data/MOT17/train',
         pipeline=test_pipeline),
     test=dict(
-        ann_file='data/MOT20/annotations/test_cocoformat.json',
-        img_prefix='data/MOT20/test',
+        ann_file='data/MOT20/annotations/half-val_cocoformat.json',
+        img_prefix='data/MOT20/train',
         pipeline=test_pipeline))
 
 checkpoint_config = dict(interval=1)

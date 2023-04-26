@@ -1,0 +1,27 @@
+nohup: ignoring input
+/home/sas20048/anaconda/envs/mmtracking1/lib/python3.7/site-packages/mmcv/__init__.py:21: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  'On January 1, 2023, MMCV will release v2.0.0, in which it will remove '
+Traceback (most recent call last):
+  File "/home/sas20048/anaconda/envs/mmtracking1/lib/python3.7/site-packages/mmcv/utils/config.py", line 103, in _validate_py_syntax
+    ast.parse(content)
+  File "/home/sas20048/anaconda/envs/mmtracking1/lib/python3.7/ast.py", line 35, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 30
+    img_prefix=data_root + 'train'))
+             ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "tools/test.py", line 225, in <module>
+    main()
+  File "tools/test.py", line 101, in main
+    cfg = Config.fromfile(args.config)
+  File "/home/sas20048/anaconda/envs/mmtracking1/lib/python3.7/site-packages/mmcv/utils/config.py", line 341, in fromfile
+    use_predefined_variables)
+  File "/home/sas20048/anaconda/envs/mmtracking1/lib/python3.7/site-packages/mmcv/utils/config.py", line 207, in _file2dict
+    Config._validate_py_syntax(filename)
+  File "/home/sas20048/anaconda/envs/mmtracking1/lib/python3.7/site-packages/mmcv/utils/config.py", line 105, in _validate_py_syntax
+    raise SyntaxError('There are syntax errors in config '
+SyntaxError: There are syntax errors in config file /home/sas20048/code/mmtracking/configs/mot/deepsort/sort_faster-rcnn_fpn_4e_mot20-private-half.py: invalid syntax (<unknown>, line 30)
